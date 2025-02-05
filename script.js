@@ -1,5 +1,5 @@
 const fruit = [];
-const fruitDisplay = document.getElementById('fruitDisplay');
+const fruitDisplay = document.getElementById('arrayDisplay');
 const message = document.getElementById('message');
 const inputValue = document.getElementById('inputValue');
 
@@ -30,7 +30,7 @@ document.getElementById('addToEnd').addEventListener('click', () => {
         inputValue.value = ''; // Clear input field
     } else {
         message.textContent = 'Please enter a valid value.';
-    }
+    } 
 });
 
 // Remove value from the start of the fruit array
@@ -57,6 +57,7 @@ document.getElementById('removeFromEnd').addEventListener('click', () => {
 document.getElementById('clearArray').addEventListener('click', () => {
     fruit.length = 0;
     updateDisplay();
+    alert("The list is empty");
 });
 
 // Initialize the display
